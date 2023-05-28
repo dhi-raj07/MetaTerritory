@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 190vh;
+}
+body {
+  background-color: #233e58;
+}
+
+.title {
+  /* color: rgb(129, 230, 208); */
+}
+
+.home{
+  border-radius: 30px;
+  /* background: radial-gradient(#7F5A83, #0D324D); */
+  position: absolute;
+  top: calc(8%);
+  left: calc(5%);
+  bottom: calc(5%);
+  right: calc(5%);
+  display: grid;
+  padding-top: 50px;
+  /* width: 80%;
+  height: 90%; */
+	/* box-shadow: 1px 1px 30px rgba(33,33,33 ,1); */
+}
+/* * {
+  position: relative;
+  box-sizing: border-box;
+} */
+
+.iframely-embed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: white;
+}
+
+#app {
+
+  z-index: 100;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+/* #app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-bottom: 4vmin;
+  height: 90vh;
+  width: 100%;
+  background: #ede8e2;
+  color: #3a3535;
+} */
+/* 
+body {
+  display: grid;
+  padding: 3vmin;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+.title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-family: "Prata", serif;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2;
+  
+
+
+ .title-inner {
+    display: inline-block;
+  }
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cafe,
+.mozart {
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  color: white;
+  font-family: 'Gilda Display', serif;
+}
+
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart-inner {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title {
+  animation: outer-left 1s 1s ease both;
+}
+
+.cafe {
+
+  > .cafe-inner {
+    display: inline-block;
+  }
+}
+
+.mozart {
+  display: inline-block;
+}
+
+body:active * {
+  animation: none !important;
+}
+
+.home__aboutwritting{
+  height: 400px;
+  width: 900px;
+  background: #606090;
+  /* box-shadow: 1px 1px 30px rgba(33,33,33 ,1); */
+  border-radius: 10%;
+  position: relative;
+  margin-top: 150px; 
+  margin-left: 90px; 
+  box-shadow: 1px 1px 30px rgba(33,33,33 ,1);
+  /* background-image: linear-gradient(to right, #7373fa, #465290); */
+  font-size: 30px;
+  padding: 60px;
+}
+
+.aimg{
+  margin-top: -570px;
+  margin-left: 65%;
+  height: 600px;
+}
+.img{
+  margin-top: -400px;
+  margin-left: 460px;
+}
+
+img {
+  display: block;
+  height: auto;
+  /* align-items: right; */
+}
+.img{
+height: 700px;
+margin-left: 60%;
+
+}
+
+
+.homa__about{
+  margin-top:900px;
+}
+.wrapper.four {
+  font-size: 2rem;
+  font-family: "Play", sans-serif;
+}
+.four .type{
+  /* padding: 2rem 1rem; */
+  width: auto;
+  margin: auto;
+}
+
+
+.contract {
+  color: white;
+  font-size: 24px;
+}
+
+.contract>  a {
+  padding: 0 0 0 35px;
+  color: plum;
+  font-size: 24px;
+}
+
+.price {
+  margin-left: 750px;
+  color: palevioletred;
+  padding: 0 0 0 0;
+}
+.price2 {
+  color: palevioletred;
+}
+.price2:hover {
+  color: rgb(241, 188, 88);
+}
+.price:hover {
+  color: rgb(241, 188, 88);
+}
+.box{
+  margin-left:200px; 
+}
+.made{
+  margin-left: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  animation: text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.suntitle{
+  margin-top: 100%;
+  margin-left: 25%;
+  color: #fff;
+}
+.ethdiv{
+  background-color: rgba(225,225,225,0.2);
+  /* box-shadow: 0px,4px,16px, rgba(0,0,0,0.5); */
+  width:200px ;
+  height: 270px;
+  position: absolute;
+  border-radius: 30px;
+  animation: text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.poldiv{
+  background-color: rgba(225,225,225,0.2);
+  width:200px ;
+  height: 270px;
+  position: absolute;
+  margin-left: 300px;
+  border-radius: 30px;
+  animation: text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.filediv{
+  background-color: rgba(225,225,225,0.2);
+  width:200px ;
+  height: 270px;
+  position: absolute;
+  margin-left: 600px;
+  border-radius: 30px;
+  animation: text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.eth{
+  height: 200px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10px;
+  animation: text-clip 1s 0.1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.pol{
+  height: 150px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10px;
+  animation: text-clip 5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.file{
+  height: 150px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10px;
+  animation: text-clip 5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.bubbles{
+  position:relative; 
+  display: flex;
+}
+.bubbles span{
+  position: relative;
+  width:15px; 
+  height: 15px;
+  background: #4fc3dc;
+  margin: 0 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0  50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0  50px #ff2d75,
+  0 0 100px #ff2d75;
+}
+
+@keyframes animate
+{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(10vh) scale(1);
+  }
+}
+
+.next-mint-countdown {
+  color: lightpink;
+  font-size: 30px;
+}
+
+.address {
+  color: slateblue;
+  padding-left: 20px;
+  font-size:15px;
+}
+
+.work {
+  padding-left: 120px;
+}
